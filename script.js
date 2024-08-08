@@ -1,25 +1,56 @@
-const redNotes = [
-  "Red note sentence 1",
-  "Red note sentence 2",
-  "Red note sentence 3"
+const happy = [
+  "אני כל כך גאה בך!",
+  "החיוך שלך מאיר לי את היום.",
+  "אין כמוך כשאת מאושרת.",
+  "אני אוהב לראות אותך כל כך שמחה.",
+  "העולם נהיה יפה יותר כשאת מחייכת.",
+  "השמחה שלך מדבקת, תודה שאת פה.",
+  "את מאירה את הסביבה שלך באור חיובי.",
+  "כל רגע שאת שמחה הוא רגע של אושר גם לי.",
+  "מטורף עלייך שניצק",
+  "כל דבר שאת עושה הופך למיוחד כשאת שמחה.",
+  "אין אין על השניצקול",
+  "תודה עלייך בובה"
 ];
 
-const blueNotes = [
-  "Blue note sentence 1",
-  "Blue note sentence 2",
-  "Blue note sentence 3"
+const sad = [
+  "אני כאן בשבילך, תמיד.",
+  "כל דבר יסתדר בסוף, אני מבטיח.",
+  "אני מבין אותך, ופה כדי לעזור.",
+  "אל תדאגי, אנחנו נעבור את זה יחד.",
+  "תני לעצמך זמן, זה בסדר להרגיש ככה.",
+  "הכל יהיה בסדר, את לא לבד.",
+  "אני תמיד פה כדי להקשיב לך.",
+  "תזכרי שכל יום הוא הזדמנות חדשה.",
+  "גם כשחשוך, אני אמצא את הדרך להאיר לך.",
+  "הכאב יעבור, ואנחנו נמשיך קדימה."
 ];
 
-const greenNotes = [
-  "Green note sentence 1",
-  "Green note sentence 2",
-  "Green note sentence 3"
+const dontKnow = [
+  "אני מאמין בך וביכולות שלך.",
+  "נעבור את זה ביחד, צעד אחר צעד.",
+  "קחי נשימה עמוקה, הכל יסתדר.",
+  "אפשר להתלבט, זה חלק מהתהליך.",
+  "תסמכי על עצמך, את יודעת מה נכון.",
+  "אני פה לעזור לך לחשוב על הפתרון.",
+  "גם אם את לא בטוחה, את תמצאי את הדרך.",
+  "כל שאלה שלך חשובה, ואת תמצאי תשובה.",
+  "תזכרי שכל החלטה היא צעד קדימה.",
+  "אני כאן כדי לתמוך בך בכל מה שתבחרי."
 ];
 
-const yellowNotes = [
-  "Yellow note sentence 1",
-  "Yellow note sentence 2",
-  "Yellow note sentence 3"
+const powerless = [
+  "אל תשכחי כמה את חזקה.",
+  "את מסוגלת להתמודד עם הכל.",
+  "גם כשקשה, את תמיד מוצאת את הכוח.",
+  "אני פה לעזור לך, תמיד.",
+  "נחים כשצריך, ממשיכים כשאפשר.",
+  "תני לעצמך להיות חלשה, זה חלק מהכוח.",
+  "את לא לבד במאבק הזה.",
+  "כל מכשול שאת עוברת מחזק אותך.",
+  "אני מאמין בכוחות שלך, גם כשאת לא.",
+  "הזמן שלך להצליח יגיע, אני בטוח בזה.",
+  "קטן עלייך שניצק"
 ];
 
 function pullNoteFromJar(noteArray, colorClass) {
@@ -71,17 +102,17 @@ function getColorFromClass(colorClass) {
 }
 
 function pullRedNote() {
-  pullNoteFromJar(redNotes, 'red');
+  pullNoteFromJar(happy, 'red');
 }
 
 function pullBlueNote() {
-  pullNoteFromJar(blueNotes, 'blue');
+  pullNoteFromJar(sad, 'blue');
 }
 
 function pullGreenNote() {
-  pullNoteFromJar(greenNotes, 'green');
+  pullNoteFromJar(dontKnow, 'green');
 }
 
 function pullYellowNote() {
-  pullNoteFromJar(yellowNotes, 'yellow');
+  pullNoteFromJar(powerless, 'yellow');
 }
