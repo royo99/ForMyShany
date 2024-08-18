@@ -1,146 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/jpg" href="shany.jpg">
-  <title>לכל זמן שתרצי</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #FFBEE0;
-      margin: 0;
-    }
-    #jar {
-      width: 300px;
-      height: 400px;
-      background: url('jar3.jpg') no-repeat center center;
-      background-size: contain;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-    #jar-top {
-      width: 150px;
-      height: 150px;
-      background: url('jar-top.png') no-repeat center center;
-      background-size: contain;
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      transition: transform 1s ease-in-out;
-      margin: 0;
-      padding: 0;
-    }
-    .heart {
-      position: absolute;
-      
-      top: 50px;
-      left: 50%;
-      width: 150px;
-      height: 150px;
-      transform: translate(-50%, -50%) rotate(-45deg) scale(0);
-      animation: growHeart 2s ease-in-out forwards;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 16px;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box; /* Ensure padding is included in the element's size */
-    }
-    .heart::after, .heart::before {
-      content: '';
-      position: absolute;
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      background: inherit;
-    }
-    .heart::after {
-      top: -75px;
-      left: 0;
-    }
-    .heart::before {
-      top: 0;
-      left: 75px;
-    }
-    .heart .text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);
-      z-index: 10; /* Ensure text is above heart shape */
-    }
-    .heart .close-btn {
-      position: absolute;
-      top: -20px;
-      right: -20px;
-      background: none;
-      color: black;
-      border: none;
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      transform: rotate(45deg);
-      z-index: 11;
-      
-    }
-    @keyframes growHeart {
-      0% { transform: translate(-50%, -50%) rotate(-45deg) scale(0); }
-      50% { transform: translate(-50%, 200px) rotate(-45deg) scale(1.5); }
-      100% { transform: translate(-50%, 150px) rotate(-45deg) scale(2); }
-    }
-    .buttons {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-    img {
-      height: 120px;
-      width: 140px;
-      
-    }
-    button.red { background-color: #ED78AC; }
-    button.blue { background-color: #BFAFED; }
-    button.green { background-color: #CBECB7; }
-    button.yellow { background-color: #E7DB87; color: black; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentine</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="shany.jpg" alt="shany">
-  <div id="jar">
-    <div id="jar-top"></div>
-    <div id="note-container"></div>
-  </div>
-  <div class="buttons">
-    <button class="red" onclick="pullRedNote()">כשאת שמחה</button>
-    <button class="blue" onclick="pullBlueNote()">כשאת עצובה</button>
-    <button class="green" onclick="pullGreenNote()">כשאין לך מושג מה לעשות</button>
-    <button class="yellow" onclick="pullYellowNote()">כשאין לך כוח</button>
-  </div>
-  <script src="script.js"></script>
+    <div class="card">
+        <h1 class="title">יום האהבה שמח שניץ</h1>
+        <h1 class="title">?האם תצאי איתי לדייט בחמישי ב 21:00</h1>
+        <div class="animation">
+            <img src="images/cat-01.gif" alt="San Valentin" class="cat img-fluid">
+        </div>
+        <div class="text"></div>
+        <button class="button">כן</button>
+        <button class="button button__negative">לא</button>
+        <button class="button button__error">תזכרי את זה</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
